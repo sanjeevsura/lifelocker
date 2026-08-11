@@ -23,9 +23,19 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("lifelocker-release.jks")
+            storePassword = "LifeLocker@2024"
+            keyAlias = "lifelocker"
+            keyPassword = "LifeLocker@2024"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.lifelocker.utils.RevealStateManagerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-08-11T14:57:35" hostname="LAPTOP-G303LVA4" time="1.209">
-  <properties/>
-  <testcase name="reveal_marksItemAsRevealed" classname="com.lifelocker.utils.RevealStateManagerTest" time="1.148"/>
-  <testcase name="maskedDisplay_isNeverPlaintext" classname="com.lifelocker.utils.RevealStateManagerTest" time="0.029"/>
-  <testcase name="maskAll_clearsAllRevealedItems" classname="com.lifelocker.utils.RevealStateManagerTest" time="0.032"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
