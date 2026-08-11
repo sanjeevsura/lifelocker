@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LifeLocker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorOnPrimary">@color/background_dark</item>
+        <item name="colorPrimaryContainer">@color/surface_dark_card</item>
+        <item name="colorOnPrimaryContainer">@color/accent_light</item>
+        <item name="colorSecondary">@color/primary_light</item>
+        <item name="colorOnSecondary">@color/background_dark</item>
+        <item name="colorSecondaryContainer">@color/surface_dark</item>
+        <item name="colorTertiary">@color/success</item>
+        <item name="colorError">@color/danger</item>
+        <item name="colorErrorContainer">@color/danger_container</item>
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorSurfaceVariant">@color/surface_dark_card</item>
+        <item name="colorOnSurface">@color/text_on_dark</item>
+        <item name="colorOnSurfaceVariant">@color/text_on_dark_secondary</item>
+        <item name="android:textColorPrimary">@color/text_on_dark</item>
+        <item name="android:textColorSecondary">@color/text_on_dark_secondary</item>
+        <item name="android:textColorHint">@color/text_on_dark_secondary</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/surface_dark</item>
+    </style>
+    <style name="Theme.LifeLocker.Splash" parent="Theme.LifeLocker">
+        <item name="android:background">@color/background_dark</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

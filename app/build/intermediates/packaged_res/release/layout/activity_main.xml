@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/android:colorBackground"
+    android:orientation="vertical">
+
+    <!-- Top Bar with Logo, Title, Global Search Bar & Quick Tools -->
+    <LinearLayout
+        android:id="@+id/layout_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="?attr/colorSurface"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/iv_top_logo"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="LifeLocker Logo"
+            android:src="@drawable/ic_lifelocker_logo"
+            app:tint="@color/primary" />
+
+        <TextView
+            android:id="@+id/tv_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="LifeLocker"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Global Search Input Bar -->
+        <FrameLayout
+            android:id="@+id/layout_global_search"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_bar"
+            android:paddingHorizontal="12dp">
+
+            <EditText
+                android:id="@+id/et_global_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableStart="@android:drawable/ic_menu_search"
+                android:drawablePadding="8dp"
+                android:drawableTint="?attr/colorOnSurfaceVariant"
+                android:hint="Search documents, vaults, notes..."
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="?attr/android:textColorHint"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <!-- Dynamic Theme Selector Toggle Button -->
+        <ImageButton
+            android:id="@+id/btn_top_theme_toggle"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Toggle Theme"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_compass"
+            app:tint="?attr/colorOnSurface" />
+
+        <!-- Emergency / Notifications Action Button -->
+        <ImageButton
+            android:id="@+id/btn_top_emergency"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Emergency Mode"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_emergency"
+            app:tint="@color/emergency" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <!-- Fragment container hosting Navigation Graph -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+    <!-- Bottom Navigation Bar for Mobile -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="?attr/colorSurface"
+        android:elevation="8dp"
+        app:itemIconSize="22dp"
+        app:itemIconTint="@color/cat_personal"
+        app:itemRippleColor="@color/soft_purple"
+        app:itemTextColor="@color/text_secondary"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

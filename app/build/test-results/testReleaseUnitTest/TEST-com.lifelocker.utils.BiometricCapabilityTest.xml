@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.lifelocker.utils.BiometricCapabilityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-08-11T14:57:31" hostname="LAPTOP-G303LVA4" time="4.005">
+  <properties/>
+  <testcase name="getCapability_returnsKnownStatesWithoutCrash" classname="com.lifelocker.utils.BiometricCapabilityTest" time="4.005"/>
+  <system-out><![CDATA[WARNING: No manifest file found at .\AndroidManifest.xml.
+Falling back to the Android OS resources only.
+To remove this warning, annotate your test class with @Config(manifest=Config.NONE).
+]]></system-out>
+  <system-err><![CDATA[No such manifest file: .\AndroidManifest.xml
+]]></system-err>
+</testsuite>

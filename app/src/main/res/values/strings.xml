@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LifeLocker</string>
+    <string name="app_tagline">One Secure Place for Your Entire Digital Life</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_vault">Vault</string>
+    <string name="title_documents">Documents</string>
+    <string name="title_reminders">Reminders</string>
+    <string name="title_emergency">Emergency</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Categories -->
+    <string name="cat_personal">Personal</string>
+    <string name="cat_education">Education</string>
+    <string name="cat_finance">Finance</string>
+    <string name="cat_medical">Medical</string>
+    <string name="cat_travel">Travel</string>
+    <string name="cat_vehicle">Vehicle</string>
+    <string name="cat_work">Work</string>
+    <string name="cat_family">Family</string>
+    <string name="cat_property">Property</string>
+    <string name="cat_business">Business</string>
+    <string name="cat_other">Other</string>
+</resources>

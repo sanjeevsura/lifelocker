@@ -1,0 +1,15 @@
+LifeLocker
+├── authentication
+├── dashboard
+├── vault
+├── reminders
+├── emergency
+├── settings
+├── data
+│   ├── entities
+│   ├── dao
+│   ├── repository
+├── viewmodel
+├── workers
+├── notifications
+└── utils
